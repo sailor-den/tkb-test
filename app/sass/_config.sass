@@ -4,7 +4,7 @@ $accent: orange // Accent Color
 $fontsize: 16px // Body Font Size
 $textcolor: #121212 // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
-$font: "ProximaNova", sans-serif //  Font Family
+$font: "CorpidE1s", sans-serif //  Font Family
 
 
 $minWidth: 320px 	
@@ -18,8 +18,6 @@ $md4: 479.98
 // IMPORT SECTION
 
 @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
-@import 'node_modules/slick-slider/slick/slick.scss' 
-@import 'node_modules/slick-slider/slick/slick-theme.scss' 
 
 // FONTS LOAD SECTION
 
@@ -42,11 +40,15 @@ $md4: 479.98
 		// font-display: swap // Uncomment to initially display system fonts
 		src: local($fname), url($furl) format('woff'), url($furl_2) format('woff2')
 		    
-@include font('ProximaNova', normal, 200, '../fonts/ProximaNova/ProximaNova-Light.woff', '../fonts/ProximaNova/ProximaNova-Light.woff2')
-@include font('ProximaNova', normal, 400, '../fonts/ProximaNova/ProximaNova-Regular.woff', '../fonts/ProximaNova/ProximaNova-Regular.woff2')
-@include font('ProximaNova', normal, 700, '../fonts/ProximaNova/ProximaNova-Bold.woff', '../fonts/ProximaNova/ProximaNova-Bold.woff2')
-@include font('ProximaNova', normal, 800, '../fonts/ProximaNova/ProximaNova-Extrabld.woff', '../fonts/ProximaNova/ProximaNova-Extrabldt.woff2')
+@include font('CorpidE1s', normal, 700, '../fonts/corpid/woff/CorpidE1s-Bold.woff', '../fonts/corpid/woff2/CorpidE1s-Bold.woff2')
+@include font('CorpidE1s', normal, 400, '../fonts/corpid/woff/CorpidE1s-Regular.woff', '../fonts/corpid/woff2/CorpidE1s-Regular.woff2')
 
+@include font('CorpidE1sCd', normal, 200, '../fonts/corpid/woff/CorpidE1sCd-Light.woff', '../fonts/corpid/woff2/CorpidE1sCd-Light.woff2')
+
+@include font('CorpidE1sSCd', normal, 700, '../fonts/corpid/woff/CorpidE1sSCd-Bold.woff', '../fonts/corpid/woff2/CorpidE1sSCd-Bold.woff2')
+@include font('CorpidE1sSCd', normal, 800, '../fonts/corpid/woff/CorpidE1sSCd-Heavy.woff', '../fonts/corpid/woff2/CorpidE1sSCd-Heavy.woff2')
+@include font('CorpidE1sSCd', normal, 200, '../fonts/corpid/woff/CorpidE1sSCd-Light.woff', '../fonts/corpid/woff2/CorpidE1sSCd-Light.woff2')
+@include font('CorpidE1sSCd', normal, 400, '../fonts/corpid/woff/CorpidE1sSCd-Regular.woff', '../fonts/corpid/woff2/CorpidE1sSCd-Regular.woff2')
 
 
 // For example mixin font
