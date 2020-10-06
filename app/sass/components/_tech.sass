@@ -1,0 +1,141 @@
+.tech
+    padding: 0 5px
+    &__body
+        padding: 7.5% 5% 5%
+        background-color: #323232
+    &__title
+        text-align: center
+        font-style: italic
+        color: #ffffff
+        font-weight: 800
+        font-size: 30px
+        line-height: 30px
+        text-transform: uppercase
+        letter-spacing: -0.99px
+        margin-bottom: 36px
+
+
+.tabs-nav
+    width: 100%
+    &__slider
+        display: flex
+        align-items: center
+        flex-wrap: nowrap
+        height: 125px
+        width: 100%  
+        overflow-x: scroll
+        overflow-y: hidden
+        scrollbar-width: none
+        &::-webkit-scrollbar 
+            width: 0
+    &__item
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        min-width: 150px
+        height: 80px
+        margin-right: 5px
+        border: 6px solid transparent
+        cursor: pointer 
+        background-color: #3c3c3c
+        &:hover
+            border: 6px solid #ffffff
+        &_active
+            border: 6px solid #fdb813
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                width: 0
+                height: 0
+                border-style: solid
+                left: 50%
+                top: 100%
+                transform: translateX(-50%)
+                border-color: #fdb813 transparent transparent transparent
+                border-width: 20px
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                width: 0
+                height: 0
+                border-style: solid
+                left: 50%
+                top: 100% 
+                transform: translateX(-50%)
+                border-color: #3c3c3c transparent transparent transparent
+                border-width: 12px
+            &:hover
+                border: 6px solid #fdb813
+            &:last-child
+                margin: 0
+    &__btn
+        position: absolute
+        background: url('../images/icons/tech/arr-next.png') center no-repeat
+        right: -35px
+        width: 40px
+        height: 40px
+        outline: none
+        border: none 
+        &:active
+             outline: none   
+        &:focus
+            outline: none    
+
+.tabs
+    &__nav
+        margin-bottom: 50px
+        position: relative
+        
+            
+.tab
+    display: none
+    justify-content: space-between
+    position: relative
+    overflow: visible
+    &_active
+        display: flex
+
+.content-tabs
+    padding: 5.5% 4.5% 5% 0
+    background: url('../images/icons/tech/bg_tech.png') center no-repeat
+    background-size: cover
+    overflow: visible
+    &__img
+        width: 50%
+        position: relative
+        display: flex
+        align-items: flex-start
+        justify-content: center
+    &__icon
+        max-width: 100%
+        display: block
+        height: auto
+        position: absolute
+        top: -90px
+        &_clumb
+            top: 0
+            position: relative
+    &__text
+        width: 50%
+    &__title
+        color: #ffffff
+        font-weight: 800
+        font-style: italic
+        font-size: 20px
+        line-height: 22px
+        text-transform: uppercase
+        letter-spacing: -0.8px
+        margin-bottom: 20px
+    &__subtitle
+        color: #ffffff
+        font-weight: 200
+        font-style: italic
+        font-size: 18px
+        line-height: 20px
+        margin-bottom: 20px
+        &:last-child
+            margin: 0
+  

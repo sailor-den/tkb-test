@@ -1,0 +1,117 @@
+// USER VARIABLES SECTION
+
+$accent: orange // Accent Color
+$fontsize: 16px // Body Font Size
+$textcolor: #121212 // Text Color
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+$font: "ProximaNova", sans-serif //  Font Family
+
+
+$minWidth: 320px 	
+$maxWidthContainer: 990
+$maxWidth: 1920
+$md1: $maxWidthContainer + 12
+$md2: 991.98
+$md3: 767.98 
+$md4: 479.98
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/slick-slider/slick/slick.scss' 
+@import 'node_modules/slick-slider/slick/slick-theme.scss' 
+
+// FONTS LOAD SECTION
+
+// font-weight helper:
+
+// 100 Extra Light or Ultra Light;
+// 200 Light or Thin; 300 Book or Demi;
+// 400 Regular or Normal;
+// 500 Medium;
+// 600 Semibold or Demibold;
+// 700 Bold;
+// 800 Black or Extra Bold or Heavy;
+// 900 Extra Black or Fat or Ultra Black
+
+@mixin font($fname, $fstyle, $fweight, $furl, $furl_2)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		// font-display: swap // Uncomment to initially display system fonts
+		src: local($fname), url($furl) format('woff'), url($furl_2) format('woff2')
+		    
+@include font('ProximaNova', normal, 200, '../fonts/ProximaNova/ProximaNova-Light.woff', '../fonts/ProximaNova/ProximaNova-Light.woff2')
+@include font('ProximaNova', normal, 400, '../fonts/ProximaNova/ProximaNova-Regular.woff', '../fonts/ProximaNova/ProximaNova-Regular.woff2')
+@include font('ProximaNova', normal, 700, '../fonts/ProximaNova/ProximaNova-Bold.woff', '../fonts/ProximaNova/ProximaNova-Bold.woff2')
+@include font('ProximaNova', normal, 800, '../fonts/ProximaNova/ProximaNova-Extrabld.woff', '../fonts/ProximaNova/ProximaNova-Extrabldt.woff2')
+
+
+
+// For example mixin font
+
+@mixin bold 
+	font-family: Roboto, sans-serif
+	font-weight: bold
+	font-size: 25px
+
+
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+*
+	box-sizing: border-box
+
+html 
+	height: 100%
+
+body
+	height: 100%
+	font-family: $font
+	font-size: $fontsize
+	font-weight: 400
+	min-width: 320px
+	position: relative
+	line-height: 1.42
+	overflow-x: hidden
+	color: $textcolor
+	background-color: #f4f2f2
+
+img 
+	display: block
+	max-width: 100%
+	height: auto 
+
+ul 
+	margin: 0
+	padding: 0
+
+ul li 
+	list-style: none
+
+p 
+	padding: 0
+	margin: 0
+
+a
+	&:hover
+		text-decoration: none
+
+.container	
+    max-width: $maxWidthContainer + px
+    margin: 0 auto 
