@@ -359,3 +359,16 @@ a:hover {
 .container {
   max-width: 990px;
   margin: 0 auto; }
+
+.content-page__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.content-page__logo-link {
+  display: block;
+  width: 150px; }
+
+.content-page__list {
+  display: flex;
+  align-items: center; }
