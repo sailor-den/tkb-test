@@ -1,4 +1,8 @@
 .content-page
+    &__container
+        max-width: 730px
+        margin: 0 auto
+        padding: 3% 0% 0% 0%
     &__top
         display: flex
         align-items: center
@@ -9,3 +13,57 @@
     &__list
         display: flex
         align-items: center
+    &__item
+        padding: 10px 20px
+        border-right: 1px solid #3ec3be
+        &:last-child
+            border: none
+    &__link
+        color: #000000
+        transition: all .3s ease
+        &:hover 
+            color: #f39a17
+    &__middle
+        padding-top: 170px
+    &__title
+        font-size: 45px
+        color: #00afaa
+
+.promo-list
+    &__item
+        display: flex
+        align-items: center
+        margin-bottom: 20px
+        &::before
+            content: ''
+            width: 33px
+            height: 33px
+            margin-right: 15px
+    &__item_time
+        &::before
+            background: url('../images/icons/time.svg') no-repeat center
+    &__item_refill
+        &::before
+            background: url('../images/icons/refill.svg') no-repeat center
+    &__item_cash
+        &::before
+            background: url('../images/icons/cash.svg') no-repeat center
+
+.actions
+    display: flex
+    margin-top: 80px
+    &__order
+        margin-right: 15px
+    &__calc
+        background-color: #00afaa
+        color: #ffffff
+        &:hover
+            background-color: #ffffff
+            color: #00afaa
+            // opacity: .7
+    &__call
+        color: #00afaa
+        &:hover
+            background-color: #00afaa
+            color: #ffffff
+            // opacity: .7
