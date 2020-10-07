@@ -362,7 +362,6 @@ a:hover {
 
 .btn {
   text-align: center;
-  border: 1px solid #00afaa;
   border-radius: 25px;
   padding: 15px 30px;
   transition: all .3s ease; }
@@ -404,6 +403,19 @@ a:hover {
   font-size: 45px;
   color: #00afaa; }
 
+.content-page__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px; }
+
+.content-page__arrows {
+  outline: none;
+  border: none;
+  background: url("../images/icons/arrows.svg") no-repeat center;
+  width: 300px;
+  height: 150px; }
+
 .promo-list__item {
   display: flex;
   align-items: center;
@@ -425,17 +437,85 @@ a:hover {
 
 .actions {
   display: flex;
-  margin-top: 80px; }
-  .actions__order {
-    margin-right: 15px; }
+  padding-top: 80px; }
   .actions__calc {
+    border: 1px solid #00afaa;
+    margin-right: 15px;
     background-color: #00afaa;
     color: #ffffff; }
     .actions__calc:hover {
       background-color: #ffffff;
       color: #00afaa; }
   .actions__call {
+    border: 1px solid #00afaa;
     color: #00afaa; }
     .actions__call:hover {
       background-color: #00afaa;
       color: #ffffff; }
+
+.deposit__container {
+  max-width: 435px;
+  margin: 0 auto;
+  padding: 180px 0px 100px; }
+
+.deposit__title {
+  text-align: center; }
+
+.deposit__list {
+  padding-top: 100px; }
+
+.deposit__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px; }
+
+.deposit__img {
+  width: 50px;
+  margin-bottom: 20px; }
+
+.deposit__arrow {
+  margin-top: 25px;
+  width: 100px; }
+
+.tariff__content {
+  max-width: 705px;
+  margin: 0 auto; }
+
+.tariff__file {
+  padding: 50px 0px 100px; }
+
+.tariff__link {
+  display: flex;
+  align-items: center; }
+  .tariff__link:before {
+    content: '';
+    background: url("../images/icons/pdf.svg") no-repeat center;
+    width: 40px;
+    height: 40px;
+    margin-right: 25px; }
+
+.form {
+  background-color: #646569; }
+  .form__content {
+    padding: 60px 0px 60px;
+    max-width: 700px;
+    margin: 0 auto; }
+  .form__title {
+    color: #ffffff; }
+  .form__body {
+    padding-top: 40px; }
+  .form__group {
+    margin-bottom: 15px; }
+  .form__input {
+    padding: 10px;
+    width: 50%; }
+  .form__group_agree {
+    color: #ffffff; }
+  .form__btn {
+    outline: none;
+    border: 1px solid #005598;
+    color: #ffffff;
+    background-color: #005598; }
+    .form__btn:hover {
+      opacity: .7; }

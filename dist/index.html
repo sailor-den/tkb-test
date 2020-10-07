@@ -18,7 +18,7 @@
 	<div class="wrapper">
 		<main class="page">
 
-			<div class="page__content content-page">
+			<section class="page__content content-page">
 				<div class="content-page__container">
 					<div class="content-page__top">
 						<div class="content-page__logo">
@@ -48,17 +48,101 @@
 							<li class="promo-list__item promo-list__item_cash">Пополнение</li>
 						</ul>
 						<div class="actions">
-							<div class="actions__order">
 								<a href="#" class="btn actions__calc">Рассчитать процент</a>
-							</div>
-							<div class="actions__more">
 								<a href="#" class="btn actions__call">Заказать звонок</a>
-							</div>
+						</div>
+						<div class="content-page__btn">
+							<button class="content-page__arrows"></button>
 						</div>
 					</div>
 				</div>
-				
-			</div>
+			</section>
+
+			<section class="deposit">
+				<div class="deposit__container">
+					<h2 class="deposit__title">Как оформить вклад</h2>
+					<ul class="deposit__list">
+						<li class="deposit__item">
+							<div class="deposit__img">
+								<img src="../images/icons/list.svg" alt="list" class="deposit__icon">
+							</div>
+							<div class="deposit__description">
+								Оставить заявку
+							</div>
+							<div class="deposit__arrow">
+								<img src="../images/icons/arrows.svg" alt="arrow" class="deposit__arrow-img">
+							</div>
+						</li>
+						<li class="deposit__item">
+							<div class="deposit__img">
+								<img src="../images/icons/home.svg" alt="home" class="deposit__icon">
+							</div>
+							<div class="deposit__description">
+								Встретиться с курьером
+							</div>
+							<div class="deposit__arrow">
+								<img src="../images/icons/arrows.svg" alt="arrow" class="deposit__arrow-img">
+							</div>
+						</li>
+						<li class="deposit__item">
+							<div class="deposit__img">
+								<img src="../images/icons/card.svg" alt="card" class="deposit__icon">
+							</div>
+							<div class="deposit__description">
+								Получить и активировать карту
+							</div>
+							<div class="deposit__arrow">
+								<img src="../images/icons/arrows.svg" alt="arrow" class="deposit__arrow-img">
+							</div>
+						</li>
+						<li class="deposit__item">
+							<div class="deposit__img">
+								<img src="../images/icons/payment.svg" alt="payment" class="deposit__icon">
+							</div>
+							<div class="deposit__description">
+								Внести деньги на счет вклада
+							</div>
+							<div class="deposit__arrow">
+								<img src="../images/icons/arrows.svg" alt="arrow" class="deposit__arrow-img">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="tariff">
+				<div class="tariff__content">
+					<h2 class="tariff__title">Подробные тарифы и документы</h2>
+					<div class="tariff__file">
+						<a href="/files/tariff.pdf" target="_blank" class="tariff__link">Процентные ставки <br> по вкладу.pdf</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="form">
+				<div class="form__content">
+					<h2 class="form__title">Оставьте заявку, чтобы зафиксировать условия <br> Предложение ограничено</h2>
+					<form action="" class="form__body">
+						<div class="form__group">
+							<input type="text" class="form__input" placeholder="Фамилия *">
+						</div>
+						<div class="form__group">
+							<input type="text" class="form__input" placeholder="Паспорт *">
+						</div>
+						<div class="form__group">
+							<input type="text" class="form__input" placeholder="Телефон *">
+						</div>
+						<div class="form__group">
+							<input type="text" class="form__input" placeholder="Место жительства *">
+						</div>
+						<div class="form__group form__group_agree">
+							Нажимая «Открыть вклад» я подтверждаю своё согласие <br> на обработку Банком моих персональных данных
+							<div>* Обязательные поля</div>
+						</div>
+						<button type="submit" class="btn form__btn">Открыть вклад</button>
+					</form>
+				</div>
+			</section>
 		
 		</main>
 	</div>
