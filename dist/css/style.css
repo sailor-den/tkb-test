@@ -369,7 +369,7 @@ a:hover {
 .content-page__container {
   max-width: 730px;
   margin: 0 auto;
-  padding: 3% 0% 0% 0%; }
+  padding: 3% 10px 0% 10px; }
 
 .content-page__top {
   display: flex;
@@ -401,7 +401,8 @@ a:hover {
 
 .content-page__title {
   font-size: 45px;
-  color: #00afaa; }
+  color: #00afaa;
+  margin-bottom: 25px; }
 
 .content-page__btn {
   display: flex;
@@ -456,10 +457,12 @@ a:hover {
 .deposit__container {
   max-width: 435px;
   margin: 0 auto;
-  padding: 180px 0px 100px; }
+  padding: 180px 10px 100px; }
 
 .deposit__title {
-  text-align: center; }
+  font-size: 40px;
+  text-align: center;
+  font-family: "CorpidE1sCd", sans-serif; }
 
 .deposit__list {
   padding-top: 100px; }
@@ -474,13 +477,21 @@ a:hover {
   width: 50px;
   margin-bottom: 20px; }
 
+.deposit__description {
+  font-size: 18px; }
+
 .deposit__arrow {
   margin-top: 25px;
   width: 100px; }
 
 .tariff__content {
   max-width: 705px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0px 10px; }
+
+.tariff__title {
+  font-family: "CorpidE1sCd", sans-serif;
+  font-size: 40px; }
 
 .tariff__file {
   padding: 50px 0px 100px; }
@@ -498,10 +509,12 @@ a:hover {
 .form {
   background-color: #646569; }
   .form__content {
-    padding: 60px 0px 60px;
+    padding: 60px 10px 60px;
     max-width: 700px;
     margin: 0 auto; }
   .form__title {
+    font-family: "CorpidE1sCd", sans-serif;
+    font-size: 40px;
     color: #ffffff; }
   .form__body {
     padding-top: 40px; }
@@ -511,6 +524,7 @@ a:hover {
     padding: 10px;
     width: 50%; }
   .form__group_agree {
+    font-family: "CorpidE1sSCd", sans-serif;
     color: #ffffff; }
   .form__btn {
     outline: none;
@@ -519,3 +533,43 @@ a:hover {
     background-color: #005598; }
     .form__btn:hover {
       opacity: .7; }
+
+@media (max-width: 505px) {
+  .content-page__top {
+    flex-direction: column; }
+  .content-page__logo {
+    margin-bottom: 10px; }
+  .content-page__title {
+    font-size: 35px; }
+  .content-page__middle {
+    padding-top: 100px; }
+  .form__input {
+    width: 100%; } }
+
+@media (max-width: 450px) {
+  .actions {
+    flex-direction: column;
+    align-items: center; }
+    .actions__calc {
+      margin: 0px 0px 15px 0px;
+      width: 50%;
+      font-size: 14px;
+      padding: 15px 10px; }
+    .actions__call {
+      width: 50%;
+      font-size: 14px;
+      padding: 10px; }
+  .form__title {
+    font-size: 30px; } }
+
+@media (max-width: 355px) {
+  .content-page__logo-link {
+    width: 140px; }
+  .content-page__title {
+    font-size: 30px; }
+  .content-page__item {
+    padding: 10px; }
+  .content-page__link {
+    font-size: 14px; }
+  .tariff__title {
+    font-size: 35px; } }
