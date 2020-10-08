@@ -17,7 +17,7 @@ let paths = {
 	scripts: {
 		src: [
 			'node_modules/jquery/dist/jquery.min.js', // npm vendor example (npm i --save-dev jquery)
-			'node_modules/slick-slider/slick/slick.min.js', 
+			'node_modules/page-scroll-to-id/jquery.malihu.PageScroll2id.js', 
 			// baseDir + '/js/dynamic_adaptive.js', 
 			baseDir + '/js/custom.js' // custom.js. Always at the end
 		],

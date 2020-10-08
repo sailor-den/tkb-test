@@ -415,7 +415,10 @@ a:hover {
   border: none;
   background: url("../images/icons/arrows.svg") no-repeat center;
   width: 300px;
-  height: 150px; }
+  height: 150px;
+  transition: all .3s ease; }
+  .content-page__arrows:hover {
+    transform: scale(1.1); }
 
 .promo-list__item {
   display: flex;
@@ -523,6 +526,8 @@ a:hover {
   .form__input {
     padding: 10px;
     width: 50%; }
+    .form__input:focus {
+      outline: 1px solid #000; }
   .form__group_agree {
     font-family: "CorpidE1sSCd", sans-serif;
     color: #ffffff; }

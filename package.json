@@ -26,7 +26,8 @@
 		"gulp-ttf2woff2": "^3.0.0",
 		"gulp-uglify-es": "^2.0.0",
 		"gulp-webp": "^4.0.1",
-		"jquery": "^3.5.1"
+		"jquery": "^3.5.1",
+		"page-scroll-to-id": "^1.6.5"
 	},
 	"dependencies": {
 		"slick-slider": "^1.8.2"
